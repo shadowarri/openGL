@@ -9,7 +9,8 @@
 class GameWindow: public Window
 {
 protected:
-	double _angle{0.0};
+	double _angle {0.};
+	double _camera_z {0.};
 public:
 	GameWindow(	int width = DEFAULT_WIDTH,
 				int height = DEFAULT_HEIGHT);
