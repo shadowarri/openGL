@@ -8,13 +8,16 @@
 
 class GameWindow: public Window
 {
+protected:
+	double _angle{0.0};
 public:
 	GameWindow(	int width = DEFAULT_WIDTH,
 				int height = DEFAULT_HEIGHT);
 	virtual ~GameWindow() = default;
 
-	virtual void setup() override;
-	virtual void render() override;
+	virtual void setup();
+	virtual void render();
+	virtual void do_logic();
 };
 
 #endif

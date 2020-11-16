@@ -28,6 +28,7 @@ Window::Window(int width, int height)
 		throw std::runtime_error(
 				std::string("Не удалось создать контекст OpenGL")+
 				std::string(SDL_GetError()));
+	SDL_GL_SetSwapInterval(1);
 }
 
 void Window::main_loop()
